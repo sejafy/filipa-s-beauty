@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filipa S Beauty — Escolha o seu site</title>
+<link rel="icon" href="emblem.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{min-height:100vh;background:radial-gradient(70% 60% at 50% 0%,#fff6f0,#f9ede4 60%,#f1dccd);color:#3b2620;font-family:Jost,sans-serif;font-weight:300;display:flex;flex-direction:column;align-items:center;padding:60px 5vw}
+  .seal{width:120px;height:120px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px #e9b896,0 0 0 8px rgba(255,255,255,.6),0 30px 60px -20px rgba(120,70,50,.6);animation:f 6s ease-in-out infinite}
+  @keyframes f{50%{transform:translateY(-8px)}}
+  .k{margin-top:34px;font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:#b9785a;font-weight:500}
+  h1{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(2.4rem,5.5vw,4.4rem);text-align:center;margin:14px 0 12px;line-height:1.05}
+  h1 i{color:#b9785a}
+  p.s{color:#8a6a5f;text-align:center;max-width:520px;line-height:1.7}
+  .lang{margin-top:22px;display:flex;background:#fffaf6;border-radius:999px;padding:3px;box-shadow:inset 0 0 0 1px rgba(59,38,32,.12)}
+  .lang button{border:none;background:none;font:500 .7rem Jost;letter-spacing:.15em;padding:8px 14px;border-radius:999px;color:#8a6a5f;cursor:pointer}
+  .lang button.on{background:#3b2620;color:#fffaf6}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;width:100%;max-width:1150px;margin-top:56px}
+  a.card{text-decoration:none;color:inherit;border-radius:30px;overflow:hidden;background:#fffaf6;box-shadow:0 30px 60px -35px rgba(120,70,50,.6);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;display:flex;flex-direction:column}
+  a.card:hover{transform:translateY(-10px);box-shadow:0 45px 80px -35px rgba(120,70,50,.75)}
+  .pv{height:240px;position:relative;display:grid;place-items:center;overflow:hidden}
+  .pv img{width:120px;height:120px;border-radius:50%;object-fit:cover;position:relative;z-index:2;transition:transform .8s}
+  a.card:hover .pv img{transform:scale(1.1) rotate(-6deg)}
+  .p1{background:linear-gradient(135deg,#fdf3ee,#f3cfc0)}
+  .p1::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;border:1px solid #c98a63;opacity:.5}
+  .p2{background:radial-gradient(70% 70% at 50% 40%,#4a2519,#110908)}
+  .p2 img{box-shadow:0 0 50px rgba(217,160,127,.5)}
+  .p3{background:linear-gradient(135deg,#f9ede4,#efc2b5)}
+  .p3 .bt{position:absolute;right:26%;bottom:36px;width:46px;height:60px;border-radius:12px;background:linear-gradient(135deg,#f6cfc3,#c98f80);box-shadow:0 10px 20px -8px rgba(120,70,50,.6)}
+  .p3 .bt::before{content:"";position:absolute;left:50%;top:-40px;transform:translateX(-50%);width:18px;height:42px;border-radius:5px;background:linear-gradient(90deg,#9c5b3b,#f3c9a6,#b9785a)}
+  .tx{padding:26px 28px 30px}
+  .tx small{font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:#b9785a;font-weight:500}
+  .tx h2{font-family:'Playfair Display',serif;font-weight:400;font-size:1.8rem;margin:8px 0 8px}
+  .tx p{color:#8a6a5f;font-size:.95rem;line-height:1.6}
+  .tx span{display:inline-block;margin-top:18px;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+  footer{margin-top:60px;color:#8a6a5f;font-size:.85rem;text-align:center;line-height:1.8}
+  @media(max-width:900px){.cards{grid-template-columns:1fr;max-width:460px}}
+</style>
+</head>
+<body>
+  <img class="seal" src="emblem.jpg" alt="Método FS">
+  <div class="k">Filipa S Beauty · Davos</div>
+  <h1 data-pt="Três propostas,<br><i>uma escolha.</i>" data-de="Drei Entwürfe,<br><i>eine Wahl.</i>">Três propostas,<br><i>uma escolha.</i></h1>
+  <p class="s" data-pt="Abra cada site, explore com calma e escolha o seu favorito." data-de="Öffnen Sie jede Website, schauen Sie sich alles in Ruhe an und wählen Sie Ihren Favoriten.">Abra cada site, explore com calma e escolha o seu favorito.</p>
+  <div class="lang"><button data-l="pt" class="on">PT</button><button data-l="de">DE</button></div>
+  <div class="cards">
+    <a class="card" href="opcao-1.html"><div class="pv p1"><img src="emblem.jpg" alt=""></div><div class="tx"><small data-pt="Opção 1" data-de="Option 1">Opção 1</small><h2 data-pt="Mármore Rosé" data-de="Rosé-Marmor">Mármore Rosé</h2><p data-pt="Claro e romântico, com o medalhão 3D do logo e cristais a flutuar." data-de="Hell und romantisch, mit dem 3D-Medaillon des Logos und schwebenden Kristallen.">Claro e romântico, com o medalhão 3D do logo e cristais a flutuar.</p><span data-pt="Ver site →" data-de="Ansehen →">Ver site →</span></div></a>
+    <a class="card" href="opcao-2.html"><div class="pv p2"><img src="emblem.jpg" alt=""></div><div class="tx"><small data-pt="Opção 2" data-de="Option 2">Opção 2</small><h2 data-pt="Noite Rubi" data-de="Rubinnacht">Noite Rubi</h2><p data-pt="Escuro e luxuoso, com verniz líquido rosé gold em movimento." data-de="Dunkel und luxuriös, mit fliessendem Roségold-Lack in Bewegung.">Escuro e luxuoso, com verniz líquido rosé gold em movimento.</p><span data-pt="Ver site →" data-de="Ansehen →">Ver site →</span></div></a>
+    <a class="card" href="opcao-3.html"><div class="pv p3"><img src="emblem.jpg" alt=""><div class="bt"></div></div><div class="tx"><small data-pt="Opção 3" data-de="Option 3">Opção 3</small><h2 data-pt="Atelier de Cor" data-de="Farbatelier">Atelier de Cor</h2><p data-pt="Frasco de verniz 3D e provador virtual de cores e formatos de unhas." data-de="3D-Lackflasche und virtuelles Studio für Farben und Nagelformen.">Frasco de verniz 3D e provador virtual de cores e formatos de unhas.</p><span data-pt="Ver site →" data-de="Ansehen →">Ver site →</span></div></a>
+  </div>
+  <footer>Filipa S Beauty · Método FS<br>Promenade 106, 7270 Davos Platz</footer>
+<script>
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{const l=b.dataset.l;
+  document.querySelectorAll('[data-pt]').forEach(e=>e.innerHTML=e.dataset[l]);
+  document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b));
+  try{localStorage.setItem('fs-lang',l)}catch(e){}});
+try{if((localStorage.getItem('fs-lang')||(navigator.language.startsWith('de')?'de':'pt'))==='de')document.querySelector('.lang button[data-l=de]').click()}catch(e){}
+</script>
+</body>
+</html>
